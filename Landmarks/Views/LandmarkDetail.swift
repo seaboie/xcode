@@ -12,6 +12,7 @@ struct LandmarkDetail: View {
     var landmark: Landmark
     
     var body: some View {
+        
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)

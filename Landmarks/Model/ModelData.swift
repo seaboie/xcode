@@ -6,6 +6,12 @@
 //
 
 import Foundation
+import Combine
+
+final class ModelData: ObservableObject {
+    @Published var landmarks: [Landmark] = loadJsonBundle(fileName: "landmarkData.json")
+    
+}
 
 
 func loadJsonBundle<T: Decodable>(fileName: String) -> T {
@@ -31,7 +37,6 @@ func loadJsonBundle<T: Decodable>(fileName: String) -> T {
     }
 }
 
-var landmarks: [Landmark] = loadJsonBundle(fileName: "landmarkData.json")
 
 
 
