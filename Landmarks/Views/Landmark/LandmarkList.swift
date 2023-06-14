@@ -20,21 +20,26 @@ struct LandmarkList: View {
     
     var body: some View {
         NavigationStack {
-            List {
+            VStack {
+                ToggleFavorite(showFavoriteOnly: $showFavoritesOnly)
                 
-                Toggle(isOn: $showFavoritesOnly) {
-                    Text("Favorites only")
-                }
-                ForEach(filteredLandmarks) { landmark in
-                    NavigationLink {
-                        LandmarkDetail(landmark: landmark)
-                    } label: {
-                        LandmarkRow(landmark: landmark)
-                    }
+                List {
+                    
+                    
+                    ForEach(filteredLandmarks) { landmark in
+                        NavigationLink {
+                            LandmarkDetail(landmark: landmark)
+                        } label: {
+                            LandmarkRow(landmark: landmark)
+                        }
 
+                    }
                 }
+                .listStyle(.plain)
+                
+                .navigationTitle("Landmarks")
             }
-            .navigationTitle("Landmarks")
+            
             
         }
         
