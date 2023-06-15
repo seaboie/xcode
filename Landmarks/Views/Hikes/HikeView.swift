@@ -5,7 +5,7 @@ Abstract:
 A view displaying information about a hike, including an elevation graph.
 */
 
-import SwiftUI
+import SwiftUI		
 
 struct HikeView: View {
     var hike: Hike
