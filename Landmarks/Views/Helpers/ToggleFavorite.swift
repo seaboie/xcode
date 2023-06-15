@@ -15,6 +15,7 @@ struct ToggleFavorite: View {
         VStack {
             Toggle(isOn: $showFavoriteOnly) {
                 Text("Favorite only")
+                    .font(.system(size: sz.headline))
             }
         }
         

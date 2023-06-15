@@ -10,7 +10,7 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = loadJsonBundle(fileName: "landmarkData.json")
-    
+    var hikes: [Hike] = loadJsonBundle(fileName: "hikeData.json")
 }
 
 
