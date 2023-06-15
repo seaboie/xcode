@@ -13,6 +13,8 @@ final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = loadJsonBundle(fileName: "landmarkData.json")
     var hikes: [Hike] = loadJsonBundle(fileName: "hikeData.json")
     
+    @Published var profile = Profile.default;
+    
     var features: [Landmark] {
         landmarks.filter({$0.isFeatured})
     }
