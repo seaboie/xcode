@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		811A7D852A3DDD86006CAAF6 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A7D842A3DDD86006CAAF6 /* ItemRow.swift */; };
+		811A7D872A3E0739006CAAF6 /* ItemDetial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A7D862A3E0739006CAAF6 /* ItemDetial.swift */; };
 		815131BC2A3CAFAF00C446E3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815131BB2A3CAFAF00C446E3 /* Helpers.swift */; };
 		815131BE2A3CB78E00C446E3 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 815131BD2A3CB78E00C446E3 /* menu.json */; };
 		815131C22A3CB9CF00C446E3 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815131C12A3CB9CF00C446E3 /* Menu.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		811A7D842A3DDD86006CAAF6 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		811A7D862A3E0739006CAAF6 /* ItemDetial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetial.swift; sourceTree = "<group>"; };
 		815131BB2A3CAFAF00C446E3 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		815131BD2A3CB78E00C446E3 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		815131C12A3CB9CF00C446E3 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				811A7D842A3DDD86006CAAF6 /* ItemRow.swift */,
+				811A7D862A3E0739006CAAF6 /* ItemDetial.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81FD5DC62A36E712001B7087 /* ContentView.swift in Sources */,
+				811A7D872A3E0739006CAAF6 /* ItemDetial.swift in Sources */,
 				815131BC2A3CAFAF00C446E3 /* Helpers.swift in Sources */,
 				815131C42A3CC3EC00C446E3 /* Order.swift in Sources */,
 				811A7D852A3DDD86006CAAF6 /* ItemRow.swift in Sources */,
