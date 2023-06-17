@@ -10,6 +10,7 @@ import Foundation
 struct MenuSection: Codable, Hashable, Identifiable {
     var id: UUID;
     var name: String;
+    var items: [MenuItem]
     
 }
 

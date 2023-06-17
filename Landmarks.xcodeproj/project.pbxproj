@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811A7D852A3DDD86006CAAF6 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A7D842A3DDD86006CAAF6 /* ItemRow.swift */; };
 		815131BC2A3CAFAF00C446E3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815131BB2A3CAFAF00C446E3 /* Helpers.swift */; };
 		815131BE2A3CB78E00C446E3 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 815131BD2A3CB78E00C446E3 /* menu.json */; };
 		815131C22A3CB9CF00C446E3 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815131C12A3CB9CF00C446E3 /* Menu.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		811A7D842A3DDD86006CAAF6 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		815131BB2A3CAFAF00C446E3 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		815131BD2A3CB78E00C446E3 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		815131C12A3CB9CF00C446E3 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		811A7D832A3DDD72006CAAF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				811A7D842A3DDD86006CAAF6 /* ItemRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		815131BF2A3CB99600C446E3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		81FD5DC22A36E712001B7087 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				811A7D832A3DDD72006CAAF6 /* Views */,
 				815131C02A3CB9B100C446E3 /* Observation */,
 				815131BF2A3CB99600C446E3 /* Models */,
 				81FD5DC32A36E712001B7087 /* LandmarksApp.swift */,
@@ -169,6 +180,7 @@
 				81FD5DC62A36E712001B7087 /* ContentView.swift in Sources */,
 				815131BC2A3CAFAF00C446E3 /* Helpers.swift in Sources */,
 				815131C42A3CC3EC00C446E3 /* Order.swift in Sources */,
+				811A7D852A3DDD86006CAAF6 /* ItemRow.swift in Sources */,
 				815131C22A3CB9CF00C446E3 /* Menu.swift in Sources */,
 				81FD5DC42A36E712001B7087 /* LandmarksApp.swift in Sources */,
 			);
