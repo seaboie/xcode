@@ -82,9 +82,35 @@ var total: Int {
 
 
 --- 
-# Logic
+# Logic  
 
+---  
 
+# Navigation 
+- use : .navigationDestination() 
+- เปลี่ยน ไปหน้า อื่น 
+
+```swift
+NavigationStack {
+    List {
+        ForEach(menus) { menu in
+            Section(menu.name) {
+                ForEach(menu.items) { item in
+                    NavigationLink(value: item) { // 1. (value: _)
+                        ItemRow(item: item)
+                    }
+
+                }
+            }
+        }
+    }
+    .navigationDestination(for: MenuItem.self, destination: { item in   // 2. ....
+        ItemDetial(item: item)
+    })
+    .navigationTitle("Menu")
+    .listStyle(.grouped)
+}
+ ```
 
 
 
