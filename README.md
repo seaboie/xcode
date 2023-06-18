@@ -42,7 +42,7 @@ final class ModelData: ObservableObject {
 
 ## - Image
 
-- ประกาศ Property image แล้ว return Image("name")
+- ## ประกาศ Property image แล้ว return Image("name")
 
 ```swift
 var image: Image {
@@ -51,7 +51,7 @@ var image: Image {
 ```
 ---
 
-- เปลี่ยนชื่อ Image String 
+- ## เปลี่ยนชื่อ Image String 
 ```swift
 var mainImage: String {
    name.replacingOccurrences(of: " ", with: "-").lowercased()
@@ -64,8 +64,7 @@ var mainImage: String {
 ```
 --- 
 
-- method Compute property
-ทำการ บวกเพิ่มค่า 
+- ## method Compute property ทำการ บวกเพิ่มค่า : use: reduce() เพื่อ loop แล้ว บวกค่าเพิ่ม
 
 ```swift
 var total: Int {
@@ -79,8 +78,22 @@ var total: Int {
 
 --- 
 
+- ## Compute property : หาค่า Format Currency : 
+
+```swift
+
+var totalPrice: String {
+    let total = Double(order.total)
+    let tipValue = total / 100 * Double(tipAmount)
+
+    return (total + tipValue).formatted(.currency(code: "THB"))
+}
+ ``` 
+ 
+ --- 
+
 # Method 
-- Add() and Remove() 
+- ## Add() and Remove() 
 
 
 ```swift
@@ -112,6 +125,51 @@ class Order: ObservableObject {
 }
 
 ``` 
+
+--- 
+- ## Remove in List() 
+
+Create method refer to `IndexSet` 
+
+```swift 
+func deleteItems(at indexSet: IndexSet) {
+    order.items.remove(atOffsets: indexSet)
+} 
+``` 
+Use `.onDelete(perform:_)` insert above method for Default Slide to Delete() 
+
+```swift
+
+List {
+Section {
+        ForEach(order.items) { order in
+            HStack {
+                Text(order.name)
+                Spacer()
+                Text("$\(order.price)")
+            }
+        }
+        .onDelete(perform: deleteItems(at:))
+    }
+}
+``` 
+
+---
+
+- ## Disable View `Not Active`
+
+Use: `.disabled(_Bool)` modifier() to Make `Disable not Active` View from logic if `isEmpty` method() 
+
+```swift
+
+Section {
+    NavigationLink("Place Order") {
+        CheckoutView()
+    }
+}
+.disabled(order.items.isEmpty)
+
+```
 
 --- 
 
