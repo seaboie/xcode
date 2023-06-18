@@ -13,6 +13,10 @@
 		815131BE2A3CB78E00C446E3 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 815131BD2A3CB78E00C446E3 /* menu.json */; };
 		815131C22A3CB9CF00C446E3 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815131C12A3CB9CF00C446E3 /* Menu.swift */; };
 		815131C42A3CC3EC00C446E3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815131C32A3CC3EC00C446E3 /* Order.swift */; };
+		81AE0E432A3EDB2A0042C142 /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE0E422A3EDB2A0042C142 /* ButtonPrimary.swift */; };
+		81AE0E472A3EF7170042C142 /* ButtonSecondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE0E462A3EF7170042C142 /* ButtonSecondary.swift */; };
+		81AE0E4B2A3F016A0042C142 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE0E4A2A3F016A0042C142 /* FontSize.swift */; };
+		81AE0E4E2A3F23F20042C142 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE0E4D2A3F23F20042C142 /* OrderView.swift */; };
 		81FD5DC42A36E712001B7087 /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD5DC32A36E712001B7087 /* LandmarksApp.swift */; };
 		81FD5DC62A36E712001B7087 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD5DC52A36E712001B7087 /* ContentView.swift */; };
 		81FD5DC82A36E712001B7087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FD5DC72A36E712001B7087 /* Assets.xcassets */; };
@@ -26,6 +30,10 @@
 		815131BD2A3CB78E00C446E3 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		815131C12A3CB9CF00C446E3 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		815131C32A3CC3EC00C446E3 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		81AE0E422A3EDB2A0042C142 /* ButtonPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
+		81AE0E462A3EF7170042C142 /* ButtonSecondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSecondary.swift; sourceTree = "<group>"; };
+		81AE0E4A2A3F016A0042C142 /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
+		81AE0E4D2A3F23F20042C142 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		81FD5DC02A36E712001B7087 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FD5DC32A36E712001B7087 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		81FD5DC52A36E712001B7087 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +57,7 @@
 			children = (
 				811A7D842A3DDD86006CAAF6 /* ItemRow.swift */,
 				811A7D862A3E0739006CAAF6 /* ItemDetial.swift */,
+				81AE0E4D2A3F23F20042C142 /* OrderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -67,6 +76,15 @@
 				815131C32A3CC3EC00C446E3 /* Order.swift */,
 			);
 			path = Observation;
+			sourceTree = "<group>";
+		};
+		81AE0E412A3EDB140042C142 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				81AE0E422A3EDB2A0042C142 /* ButtonPrimary.swift */,
+				81AE0E462A3EF7170042C142 /* ButtonSecondary.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		81FD5DB72A36E712001B7087 = {
@@ -88,6 +106,7 @@
 		81FD5DC22A36E712001B7087 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				81AE0E412A3EDB140042C142 /* Components */,
 				811A7D832A3DDD72006CAAF6 /* Views */,
 				815131C02A3CB9B100C446E3 /* Observation */,
 				815131BF2A3CB99600C446E3 /* Models */,
@@ -97,6 +116,7 @@
 				81FD5DC92A36E712001B7087 /* Preview Content */,
 				815131BB2A3CAFAF00C446E3 /* Helpers.swift */,
 				815131BD2A3CB78E00C446E3 /* menu.json */,
+				81AE0E4A2A3F016A0042C142 /* FontSize.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -185,8 +205,12 @@
 				815131BC2A3CAFAF00C446E3 /* Helpers.swift in Sources */,
 				815131C42A3CC3EC00C446E3 /* Order.swift in Sources */,
 				811A7D852A3DDD86006CAAF6 /* ItemRow.swift in Sources */,
+				81AE0E4B2A3F016A0042C142 /* FontSize.swift in Sources */,
 				815131C22A3CB9CF00C446E3 /* Menu.swift in Sources */,
+				81AE0E432A3EDB2A0042C142 /* ButtonPrimary.swift in Sources */,
+				81AE0E4E2A3F23F20042C142 /* OrderView.swift in Sources */,
 				81FD5DC42A36E712001B7087 /* LandmarksApp.swift in Sources */,
+				81AE0E472A3EF7170042C142 /* ButtonSecondary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,9 @@ import SwiftUI
 struct ItemDetial: View {
     
     let item: MenuItem
+    @EnvironmentObject var order: Order
+    
+    @State private var isShowAlert = false;
     
     var body: some View {
         VStack {
@@ -29,6 +32,16 @@ struct ItemDetial: View {
             }
             Text(item.description)
                 .padding()
+            
+            Button("Order this") {
+                order.add(item: item)
+            }
+            .buttonStyle(.borderedProminent)
+            
+            
+            
+            
+            
             Spacer()
         }
         .navigationTitle(item.name)
@@ -41,6 +54,7 @@ struct ItemDetial_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             ItemDetial(item: MenuItem.example)
+                .environmentObject(Order())
         }
     }
 }
